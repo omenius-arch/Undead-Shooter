@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <title>Undead Shooter</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png"> 
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <div id="mobileControls">
+        <div id="leftControlArea">
+            <div id="joystickBase">
+                <div id="joystickStick"></div>
+            </div>
+        </div>
+        
+        <div id="rightControlArea">
+            <button id="shootBtn" class="control-btn action-btn">🔥 BẮN</button>
+            <button id="reloadBtn" class="control-btn action-btn">🔄 NẠP</button>
+        </div>
+    </div>
+
+    <div id="uiOverlay">
+        <h1 id="mainTitle">UNDEAD SHOOTER</h1>
+        <p id="gameOverMessage" style="display: none;"></p>
+        <button id="startButton">BẮT ĐẦU CHƠI</button>
+        <button id="guideButton">HƯỚNG DẪN CHƠI</button>
+        <p id="instructions">
+            W/A/S/D để di chuyển | Chuột để nhắm và bắn | R để nạp đạn.
+        </p>
+    </div>
+    
+    <div id="guideScreen" style="display: none;">
+        <h2 class="guide-title">📖 HƯỚNG DẪN SINH TỒN</h2>
+        <div class="guide-content">
+        </div>
+        <button id="backButton">QUAY LẠI MENU</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
